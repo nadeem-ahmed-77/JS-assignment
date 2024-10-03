@@ -14,8 +14,8 @@ console.log("My birth year is " + birthYear + "\n Data type of my declared varia
 //Q.3:
 
 var visitorName = "John Doe";
-const productTitle = "T-shirt";
-const quantity = 5;
+var productTitle = "T-shirt";
+var quantity = 5;
 
 // Create the message
 console.log(visitorName + " ordered " + quantity + " " + productTitle + " on XYZ Clothing store.");

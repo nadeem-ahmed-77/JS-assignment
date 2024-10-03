@@ -39,7 +39,7 @@ var @home = ;           // Cannot start with special characters
             
     
     // d)  
-        console.log("Variable names are case sensitive.Sensitive")
+        console.log("Variable names are case Sensitive")
 
          
     // e)   

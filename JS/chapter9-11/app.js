@@ -144,7 +144,7 @@ if (percentage >= 70 && percentage<=79){
 }
 
 if (percentage >= 60 && percentage<=69){
-    console.log('"B"')
+    console.log('" Grade B"')
     console.log("You need to improve")
 }
 
@@ -164,16 +164,109 @@ if (percentage < 60 ){
 // “Close enough to the correct answer”.
 
 var secretNumber = 8
-var guessNumber = prompt("insert your guess number")
+var guessNumber   = (prompt ("insert your guess number"))
+
+guessNumber = Number (guessNumber)
 
 if(guessNumber === secretNumber) {
     console.log("Bingo! Correct answer");
 }
 
-else if (guessNumber + 1 === secretNumber || guessNumber-1 === secretNumber) {
+else if (guessNumber+1 === secretNumber || guessNumber-1 === secretNumber) {
         console.log("Close enough to the correct answer")
 }
 
 else{
     console.log("sorry wrong guess")
 }
+
+
+//  Q.8:
+
+
+var number = (prompt("Enter a number to check divisible by 3"));
+number = Number(number)
+
+if (number % 3 === 0) {
+    console.log("The number " + number + " is divisible by 3.");
+} else {
+    console.log("The number " + number + " is not divisible by 3.");
+}
+
+//  Q.9:
+
+
+var number = (prompt("Enter a number to check it even or odd"));
+
+number = Number(number)
+
+if (number % 2 === 0) {
+    console.log("The number " + number + " is even.");
+} else {
+    console.log("The number " + number + " is odd.");
+}
+
+
+// Q.10. 
+
+
+
+var temperature = (prompt("Enter the tempurature"));
+
+temperature = Number(temperature);
+
+if ( temperature > 40) {
+        console.log(" It is too hot outside");
+}
+    else if ( temperature > 30) {
+        console.log("The weather today is Normal.");
+}
+    else if ( temperature > 20) {
+        console.log("Today's weather is Cool");
+}   
+    else if (temperature > 10){
+        console.log("OMG! Today's weather is so Cool");
+} 
+    else{
+    console.log("It's very cold outside.")
+}
+
+
+// Q.11: 
+// Write a program to create a calculator for +,-,*, / & %
+// using if statements. Take the following input:
+// a. First number
+// b. Second number
+// c. Operation (+, -, *, /, %)
+// Compute & show the calculated result to user.
+
+var firstNumber = (prompt("Enter the first number"));
+var secondNumber = (prompt("Enter the second number"));
+var operation = prompt("Enter the operation (+, -, *, /, %)");
+
+firstNumber = Number(firstNumber)
+secondNumber = Number(secondNumber)
+var result;
+
+if (operation === "+") {
+    result = firstNumber + secondNumber;
+} 
+    else if (operation === "-") {
+    result = firstNumber - secondNumber;
+} 
+    else if (operation === "*") {
+    result = firstNumber * secondNumber;
+} 
+    else if (operation === "/") {
+    result = firstNumber / secondNumber;
+} 
+    else if (operation === "%") {
+    result = firstNumber % secondNumber;
+}
+    else {
+    result = "Invalid operation!";
+}
+
+console.log("Result: " + result);
+
+///////////////////////////
