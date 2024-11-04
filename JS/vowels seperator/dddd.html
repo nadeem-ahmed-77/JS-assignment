@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowel and Consonant Categorizer</title>
+    <style>
+    body{
+        align-items: center;
+        
+
+    }
+    #result {
+
+    }    
+    #vowelWords {
+        border: 5px solid black;
+        padding: 25px;
+        background-color: bisque;
+        border-radius: 15px;
+ 
+    }
+    #consonantWords{
+        border: 5px solid black;
+        padding: 25px;
+        background-color: bisque;
+        border-radius: 15px;
+
+    }
+    </style>
+</head>
+<body>
+    <h2>Enter a Word to Categorize</h2>
+    <input type="text" id="words" placeholder="Enter a word">
+    <button onclick="getvowels()">Submit</button>
+
+    <h3>Results</h3>
+    <div id="results">
+        <div id="vowelWords"><strong>Vowel Words:</strong> </div>
+        <div id="consonantWords"><strong>Consonant Words:</strong> </div>
+    </div>
+
+    <script src="dddd.js"></script>
+</body>
+</html>
